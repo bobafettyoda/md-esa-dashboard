@@ -39,6 +39,14 @@ export default function Home() {
   const usfwsCount = selectedSpecies.filter((s) => s.agency === "USFWS").length;
   const noaaCount = selectedSpecies.filter((s) => s.agency === "NOAA Fisheries").length;
 
+  const rankedCounties = [...counties]
+    .map((county) => ({
+      ...county,
+      score: getConservationScore(county),
+    }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 5);
+
   return (
     <main className="page">
       <section className="hero">
@@ -153,6 +161,26 @@ export default function Home() {
                   </Geographies>
                 </ZoomableGroup>
               </ComposableMap>
+            </div>
+          </div>
+
+          <div className="panel">
+            <h3>Top Priority Counties</h3>
+            <div className="rankingList">
+              {rankedCounties.map((county, index) => (
+                <button
+                  key={county.id}
+                  className={county.id === selectedCounty.id ? "rankRow active" : "rankRow"}
+                  onClick={() => setSelectedCountyId(county.id)}
+                >
+                  <span className="rankNumber">#{index + 1}</span>
+                  <span>
+                    <strong>{county.name}</strong>
+                    <small>{county.conservationPriority} priority</small>
+                  </span>
+                  <b>{county.score}</b>
+                </button>
+              ))}
             </div>
           </div>
 
