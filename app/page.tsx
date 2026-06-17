@@ -12,6 +12,8 @@ import { counties, getSpeciesForCounty, getConservationScore } from "../data/das
 import "./styles.css";
 
 const geoUrl = "/geo/us-counties.json";
+const protectedLandsUrl = "/geo/layers/protected-lands.geojson";
+const criticalHabitatUrl = "/geo/layers/critical-habitat.geojson";
 
 const countyNameToId: Record<string, string> = {
   "Dorchester": "dorchester",
@@ -25,6 +27,8 @@ const countyNameToId: Record<string, string> = {
 export default function Home() {
   const [selectedCountyId, setSelectedCountyId] = useState(counties[0].id);
   const [query, setQuery] = useState("");
+  const [showProtectedLands, setShowProtectedLands] = useState(true);
+  const [showCriticalHabitat, setShowCriticalHabitat] = useState(true);
 
   const filteredCounties = useMemo(
     () => counties.filter((c) => c.name.toLowerCase().includes(query.toLowerCase())),
@@ -126,9 +130,29 @@ export default function Home() {
             <div>
               <h3>Maryland County Map</h3>
               <p>
-                Click a mapped Maryland county to update the dashboard. Counties
-                with demo data are highlighted; others are shown for geographic context.
+                Click a mapped Maryland county to update the dashboard. Toggle protected
+                lands and critical habitat overlays to inspect conservation gaps.
               </p>
+
+              <div className="layerControls">
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={showProtectedLands}
+                    onChange={(e) => setShowProtectedLands(e.target.checked)}
+                  />
+                  Protected lands
+                </label>
+
+                <label>
+                  <input
+                    type="checkbox"
+                    checked={showCriticalHabitat}
+                    onChange={(e) => setShowCriticalHabitat(e.target.checked)}
+                  />
+                  Critical habitat
+                </label>
+              </div>
             </div>
 
             <div className="realMap">
@@ -169,6 +193,36 @@ export default function Home() {
                         })
                     }
                   </Geographies>
+
+                  {showProtectedLands && (
+                    <Geographies geography={protectedLandsUrl}>
+                      {({ geographies }) =>
+                        geographies.map((geo) => (
+                          <Geography
+                            key={geo.rsmKey}
+                            geography={geo}
+                            className="protectedLayer"
+                            title={String(geo.properties?.name || "Protected land")}
+                          />
+                        ))
+                      }
+                    </Geographies>
+                  )}
+
+                  {showCriticalHabitat && (
+                    <Geographies geography={criticalHabitatUrl}>
+                      {({ geographies }) =>
+                        geographies.map((geo) => (
+                          <Geography
+                            key={geo.rsmKey}
+                            geography={geo}
+                            className="criticalLayer"
+                            title={String(geo.properties?.species || "Critical habitat")}
+                          />
+                        ))
+                      }
+                    </Geographies>
+                  )}
                 </ZoomableGroup>
               </ComposableMap>
             </div>
