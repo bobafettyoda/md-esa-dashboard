@@ -7,7 +7,7 @@ import {
   Geography,
   ZoomableGroup,
 } from "react-simple-maps";
-import { counties, getSpeciesForCounty } from "../data/dashboard-data";
+import { counties, getSpeciesForCounty, getConservationScore } from "../data/dashboard-data";
 import "./styles.css";
 
 const geoUrl = "/geo/us-counties.json";
@@ -34,6 +34,7 @@ export default function Home() {
     counties.find((c) => c.id === selectedCountyId) || counties[0];
 
   const selectedSpecies = getSpeciesForCounty(selectedCounty);
+  const conservationScore = getConservationScore(selectedCounty);
 
   const usfwsCount = selectedSpecies.filter((s) => s.agency === "USFWS").length;
   const noaaCount = selectedSpecies.filter((s) => s.agency === "NOAA Fisheries").length;
@@ -95,11 +96,12 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="metrics">
+          <div className="metrics metricsFive">
             <div className="metric"><span>ESA Species</span><strong>{selectedSpecies.length}</strong></div>
             <div className="metric"><span>Protected Habitat</span><strong>{selectedCounty.protectedHabitatPercent}%</strong></div>
             <div className="metric"><span>Critical Habitat</span><strong>{selectedCounty.criticalHabitatPresent ? "Yes" : "No"}</strong></div>
             <div className="metric"><span>Fragmentation</span><strong>{selectedCounty.fragmentationRisk}</strong></div>
+            <div className="metric"><span>Conservation Score</span><strong>{conservationScore}</strong></div>
           </div>
 
           <div className="panel mapPanel">
