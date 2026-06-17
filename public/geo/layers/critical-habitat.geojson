@@ -1,0 +1,60 @@
+{
+  "type": "FeatureCollection",
+  "name": "critical-habitat",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Atlantic Sturgeon",
+        "agency": "NOAA Fisheries",
+        "source": "starter-sample-replace-with-NOAA-critical-habitat"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-76.55, 38.05],
+          [-75.85, 38.05],
+          [-75.85, 38.85],
+          [-76.55, 38.85],
+          [-76.55, 38.05]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Piping Plover",
+        "agency": "USFWS",
+        "source": "starter-sample-replace-with-USFWS-critical-habitat"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-75.38, 37.92],
+          [-75.03, 37.92],
+          [-75.03, 38.42],
+          [-75.38, 38.42],
+          [-75.38, 37.92]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "species": "Bog Turtle",
+        "agency": "USFWS",
+        "source": "starter-sample-replace-with-USFWS-critical-habitat"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-77.55, 39.05],
+          [-76.95, 39.05],
+          [-76.95, 39.55],
+          [-77.55, 39.55],
+          [-77.55, 39.05]
+        ]]
+      }
+    }
+  ]
+}

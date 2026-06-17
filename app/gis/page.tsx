@@ -5,6 +5,12 @@ import "../styles.css";
 export default function GISPage() {
   const withArea = counties.filter((county) => county.areaAcres).length;
   const totalArea = counties.reduce((sum, county) => sum + (county.areaAcres || 0), 0);
+  const protectedAcres = counties.reduce((sum, county) => sum + (county.protectedAreaAcres || 0), 0);
+  const criticalAcres = counties.reduce((sum, county) => sum + (county.criticalHabitatAcres || 0), 0);
+  const unprotectedCriticalAcres = counties.reduce(
+    (sum, county) => sum + (county.unprotectedCriticalHabitatAcres || 0),
+    0
+  );
 
   return (
     <main className="page">
@@ -32,12 +38,39 @@ export default function GISPage() {
         </div>
         <div className="metric">
           <span>Protected Lands</span>
-          <strong>Pending</strong>
+          <strong>{Math.round(protectedAcres).toLocaleString()}</strong>
         </div>
         <div className="metric">
           <span>Critical Habitat</span>
-          <strong>Pending</strong>
+          <strong>{Math.round(criticalAcres).toLocaleString()}</strong>
         </div>
+      </section>
+
+      <section className="panel">
+        <h2>Overlay Summary</h2>
+        <div className="gisGrid">
+          <div>
+            <span>Protected Land Acres</span>
+            <strong>{Math.round(protectedAcres).toLocaleString()}</strong>
+          </div>
+          <div>
+            <span>Critical Habitat Acres</span>
+            <strong>{Math.round(criticalAcres).toLocaleString()}</strong>
+          </div>
+          <div>
+            <span>Unprotected Critical Habitat</span>
+            <strong>{Math.round(unprotectedCriticalAcres).toLocaleString()}</strong>
+          </div>
+          <div>
+            <span>Layer Status</span>
+            <strong>GeoJSON overlays</strong>
+          </div>
+        </div>
+        <p className="dataFootnote">
+          The current overlay files are in <code>public/geo/layers</code>. Replace
+          them with PAD-US protected lands and USFWS/NOAA critical habitat exports
+          clipped to Maryland for production analysis.
+        </p>
       </section>
 
       <section className="panel">

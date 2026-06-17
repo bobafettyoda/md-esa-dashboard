@@ -81,7 +81,10 @@ export const counties = (rawCounties as Array<{
     conservationPriority: metric?.conservationPriority || "Unknown",
     protectedHabitatPercent:
       gisMetric?.protectedAreaPercent ?? metric?.protectedHabitatPercent ?? null,
-    criticalHabitatPresent: metric?.criticalHabitatPresent ?? null,
+    criticalHabitatPresent:
+      gisMetric?.criticalHabitatAcres !== null && gisMetric?.criticalHabitatAcres !== undefined
+        ? gisMetric.criticalHabitatAcres > 0
+        : metric?.criticalHabitatPresent ?? null,
     fragmentationRisk: metric?.fragmentationRisk || "Unknown",
     notes:
       metric?.notes ||

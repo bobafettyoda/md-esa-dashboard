@@ -77,20 +77,20 @@ export default async function CountyProfile({
           </div>
           <div>
             <span>Protected Area</span>
-            <strong>{county.protectedAreaAcres ? county.protectedAreaAcres.toLocaleString() + " acres" : "Pending PAD-US"}</strong>
+            <strong>{county.protectedAreaAcres !== null && county.protectedAreaAcres !== undefined ? county.protectedAreaAcres.toLocaleString() + " acres" : "Pending PAD-US"}</strong>
           </div>
           <div>
             <span>Critical Habitat</span>
-            <strong>{county.criticalHabitatAcres ? county.criticalHabitatAcres.toLocaleString() + " acres" : "Pending USFWS/NOAA"}</strong>
+            <strong>{county.criticalHabitatAcres !== null && county.criticalHabitatAcres !== undefined ? county.criticalHabitatAcres.toLocaleString() + " acres" : "Pending USFWS/NOAA"}</strong>
           </div>
           <div>
             <span>Unprotected Critical Habitat</span>
-            <strong>{county.unprotectedCriticalHabitatAcres ? county.unprotectedCriticalHabitatAcres.toLocaleString() + " acres" : "Pending overlay"}</strong>
+            <strong>{county.unprotectedCriticalHabitatAcres !== null && county.unprotectedCriticalHabitatAcres !== undefined ? county.unprotectedCriticalHabitatAcres.toLocaleString() + " acres" : "Pending overlay"}</strong>
           </div>
         </div>
         <p className="dataFootnote">
           GIS status: {county.gisStatus || "pending"}. County area is already calculated from real geometry.
-          Protected lands and critical habitat require the next spatial overlay imports.
+          Protected lands and critical habitat are calculated from the current GeoJSON overlay files. Replace starter overlays with PAD-US and official USFWS/NOAA exports for production analysis.
         </p>
       </section>
 
