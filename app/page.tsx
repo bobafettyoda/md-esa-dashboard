@@ -1,16 +1,24 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import {
+  ComposableMap,
+  Geographies,
+  Geography,
+  ZoomableGroup,
+} from "react-simple-maps";
 import { counties, getSpeciesForCounty } from "../data/dashboard-data";
 import "./styles.css";
 
-const mapPoints: Record<string, { x: number; y: number }> = {
-  garrett: { x: 8, y: 46 },
-  montgomery: { x: 36, y: 56 },
-  "anne-arundel": { x: 55, y: 54 },
-  dorchester: { x: 73, y: 63 },
-  somerset: { x: 77, y: 82 },
-  worcester: { x: 88, y: 79 },
+const geoUrl = "/geo/us-counties.json";
+
+const countyNameToId: Record<string, string> = {
+  "Dorchester": "dorchester",
+  "Worcester": "worcester",
+  "Anne Arundel": "anne-arundel",
+  "Garrett": "garrett",
+  "Montgomery": "montgomery",
+  "Somerset": "somerset",
 };
 
 export default function Home() {
@@ -22,7 +30,9 @@ export default function Home() {
     [query]
   );
 
-  const selectedCounty = counties.find((c) => c.id === selectedCountyId) || counties[0];
+  const selectedCounty =
+    counties.find((c) => c.id === selectedCountyId) || counties[0];
+
   const selectedSpecies = getSpeciesForCounty(selectedCounty);
 
   const usfwsCount = selectedSpecies.filter((s) => s.agency === "USFWS").length;
@@ -94,35 +104,53 @@ export default function Home() {
 
           <div className="panel mapPanel">
             <div>
-              <h3>Maryland Conservation Map</h3>
+              <h3>Maryland County Map</h3>
               <p>
-                Click a county marker to update the dashboard. This is a lightweight
-                map prototype; the next version can use real GeoJSON boundaries.
+                Click a mapped Maryland county to update the dashboard. Counties
+                with demo data are highlighted; others are shown for geographic context.
               </p>
             </div>
 
-            <div className="marylandMap" aria-label="Maryland county selector map">
-              <div className="mdShape shapeWest" />
-              <div className="mdShape shapeCentral" />
-              <div className="mdShape shapeBay" />
-              <div className="mdShape shapeEastern" />
+            <div className="realMap">
+              <ComposableMap
+                projection="geoMercator"
+                projectionConfig={{
+                  center: [-76.7, 38.9],
+                  scale: 9000,
+                }}
+                width={800}
+                height={430}
+              >
+                <ZoomableGroup zoom={1}>
+                  <Geographies geography={geoUrl}>
+                    {({ geographies }) =>
+                      geographies
+                        .filter((geo) => String(geo.properties.STATE) === "24")
+                        .map((geo) => {
+                          const countyName = String(geo.properties.NAME);
+                          const countyId = countyNameToId[countyName];
+                          const hasData = Boolean(countyId);
+                          const isActive = countyId === selectedCounty.id;
 
-              {counties.map((county) => {
-                const point = mapPoints[county.id];
-                if (!point) return null;
-
-                return (
-                  <button
-                    key={county.id}
-                    className={county.id === selectedCounty.id ? "mapPoint active" : "mapPoint"}
-                    style={{ left: `${point.x}%`, top: `${point.y}%` }}
-                    onClick={() => setSelectedCountyId(county.id)}
-                    title={county.name}
-                  >
-                    <span>{county.name}</span>
-                  </button>
-                );
-              })}
+                          return (
+                            <Geography
+                              key={geo.rsmKey}
+                              geography={geo}
+                              onClick={() => {
+                                if (countyId) setSelectedCountyId(countyId);
+                              }}
+                              className={[
+                                "geoCounty",
+                                hasData ? "hasData" : "",
+                                isActive ? "active" : "",
+                              ].join(" ")}
+                            />
+                          );
+                        })
+                    }
+                  </Geographies>
+                </ZoomableGroup>
+              </ComposableMap>
             </div>
           </div>
 
