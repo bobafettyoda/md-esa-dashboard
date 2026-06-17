@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import {
   ComposableMap,
@@ -57,6 +58,9 @@ export default function Home() {
             Explore ESA-listed species, agency jurisdiction, habitat protection,
             fragmentation risk, and conservation priorities by Maryland county.
           </p>
+          <div className="heroLinks">
+            <Link href="/sources">View data source registry</Link>
+          </div>
         </div>
 
         <div className="heroCard">
@@ -204,7 +208,7 @@ export default function Home() {
             <h3>Species Present</h3>
             <div className="speciesGrid">
               {selectedSpecies.map((item) => (
-                <article className="speciesCard" key={item.id}>
+                <Link className="speciesCard speciesLink" href={`/species/${item.id}`} key={item.id}>
                   <div className="speciesHeader">
                     <h4>{item.commonName}</h4>
                     <span>{item.status}</span>
@@ -215,7 +219,7 @@ export default function Home() {
                     <div><dt>Agency</dt><dd>{item.agency}</dd></div>
                     <div><dt>Habitat</dt><dd>{item.habitat}</dd></div>
                   </dl>
-                </article>
+                </Link>
               ))}
             </div>
           </div>

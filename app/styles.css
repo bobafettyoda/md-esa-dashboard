@@ -571,3 +571,131 @@ dd {
   justify-self: end;
   font-size: 24px;
 }
+
+.speciesLink {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  transition: transform 0.18s ease, border-color 0.18s ease;
+}
+
+.speciesLink:hover {
+  transform: translateY(-2px);
+  border-color: rgba(116, 215, 167, 0.65);
+}
+
+.backLink {
+  display: inline-block;
+  margin: 0 auto 18px;
+  max-width: 1180px;
+  color: #74d7a7;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.speciesProfileHero {
+  max-width: 1180px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.scientific.large {
+  font-size: 22px;
+  margin-bottom: 18px;
+}
+
+.profileBadge {
+  min-width: 170px;
+  border-radius: 22px;
+  padding: 22px;
+  background: rgba(248, 113, 113, 0.14);
+  border: 1px solid rgba(248, 113, 113, 0.28);
+  text-align: center;
+}
+
+.profileBadge span {
+  display: block;
+  font-size: 28px;
+  font-weight: 900;
+  color: #fecaca;
+}
+
+.profileBadge small {
+  display: block;
+  margin-top: 6px;
+  color: #c9d8e8;
+}
+
+.metricsFour {
+  max-width: 1180px;
+  margin: 0 auto 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.sourceList {
+  color: #c9d8e8;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .speciesProfileHero,
+  .metricsFour {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+}
+
+.sourceGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.sourceCard {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(159, 189, 219, 0.14);
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.sourceCard:hover {
+  border-color: rgba(116, 215, 167, 0.65);
+}
+
+.sourceCard p {
+  color: #b9c8d9;
+  line-height: 1.6;
+}
+
+.sourceCard small {
+  color: #91a4ba;
+  font-weight: 800;
+}
+
+@media (max-width: 900px) {
+  .sourceGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.heroLinks {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.heroLinks a {
+  color: #08111f;
+  background: #74d7a7;
+  border-radius: 999px;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-weight: 900;
+}
