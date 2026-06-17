@@ -756,3 +756,14 @@ dd {
     grid-template-columns: 1fr;
   }
 }
+
+.dataBanner {
+  max-width: 1180px;
+  margin: 0 auto 24px;
+  color: #c9d8e8;
+  line-height: 1.6;
+}
+
+.dataBanner strong {
+  color: #74d7a7;
+}

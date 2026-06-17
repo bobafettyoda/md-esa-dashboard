@@ -1,0 +1,34 @@
+[
+  {
+    "id": "usfws-ecosphere",
+    "name": "USFWS ECOSphere Species Data Explorer",
+    "agency": "U.S. Fish & Wildlife Service",
+    "category": "species",
+    "url": "https://ecos.fws.gov/ecp/report/adhocDocumentation?catalogId=species&reportId=species",
+    "notes": "Official FWS ESA species metadata source and REST query documentation."
+  },
+  {
+    "id": "noaa-critical-habitat",
+    "name": "NOAA National ESA Critical Habitat Mapper",
+    "agency": "NOAA Fisheries",
+    "category": "critical-habitat",
+    "url": "https://www.fisheries.noaa.gov/resource/map/national-esa-critical-habitat-mapper",
+    "notes": "Official NOAA Fisheries critical habitat map service and downloads."
+  },
+  {
+    "id": "pad-us",
+    "name": "PAD-US Protected Areas Database",
+    "agency": "U.S. Geological Survey",
+    "category": "protected-lands",
+    "url": "https://www.usgs.gov/programs/gap-analysis-project/science/pad-us-data-download",
+    "notes": "National protected-areas inventory for protected-overlap calculations."
+  },
+  {
+    "id": "census-counties",
+    "name": "U.S. Census Cartographic Boundary Files",
+    "agency": "U.S. Census Bureau",
+    "category": "boundaries",
+    "url": "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html",
+    "notes": "County boundary source for map geographies."
+  }
+]

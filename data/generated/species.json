@@ -1,0 +1,101 @@
+[
+  {
+    "id": "atlantic-sturgeon",
+    "commonName": "Atlantic Sturgeon",
+    "scientificName": "Acipenser oxyrinchus oxyrinchus",
+    "status": "Endangered",
+    "taxon": "Fish",
+    "agency": "NOAA Fisheries",
+    "habitat": "Tidal rivers, estuaries, Chesapeake Bay corridors, and Atlantic coastal waters",
+    "source": "NOAA Fisheries ESA-listed species / critical habitat context",
+    "sourceUrl": "https://www.fisheries.noaa.gov/species/atlantic-sturgeon"
+  },
+  {
+    "id": "shortnose-sturgeon",
+    "commonName": "Shortnose Sturgeon",
+    "scientificName": "Acipenser brevirostrum",
+    "status": "Endangered",
+    "taxon": "Fish",
+    "agency": "NOAA Fisheries",
+    "habitat": "Large rivers, tidal rivers, and estuarine systems",
+    "source": "NOAA Fisheries ESA-listed species context",
+    "sourceUrl": "https://www.fisheries.noaa.gov/species/shortnose-sturgeon"
+  },
+  {
+    "id": "northern-long-eared-bat",
+    "commonName": "Northern Long-eared Bat",
+    "scientificName": "Myotis septentrionalis",
+    "status": "Endangered",
+    "taxon": "Mammal",
+    "agency": "USFWS",
+    "habitat": "Forested summer habitat, roost trees, and winter hibernacula",
+    "source": "USFWS ECOSphere species record context",
+    "sourceUrl": "https://ecos.fws.gov/ecp/species/9045"
+  },
+  {
+    "id": "piping-plover",
+    "commonName": "Piping Plover",
+    "scientificName": "Charadrius melodus",
+    "status": "Threatened",
+    "taxon": "Bird",
+    "agency": "USFWS",
+    "habitat": "Atlantic barrier beaches, sparsely vegetated shorelines, and nesting beaches",
+    "source": "USFWS ECOSphere species record context",
+    "sourceUrl": "https://ecos.fws.gov/ecp/species/6039"
+  },
+  {
+    "id": "red-knot",
+    "commonName": "Rufa Red Knot",
+    "scientificName": "Calidris canutus rufa",
+    "status": "Threatened",
+    "taxon": "Bird",
+    "agency": "USFWS",
+    "habitat": "Coastal stopover habitats, tidal flats, beaches, and migratory shoreline areas",
+    "source": "USFWS ECOSphere species record context",
+    "sourceUrl": "https://ecos.fws.gov/ecp/species/1864"
+  },
+  {
+    "id": "bog-turtle",
+    "commonName": "Bog Turtle",
+    "scientificName": "Glyptemys muhlenbergii",
+    "status": "Threatened",
+    "taxon": "Reptile",
+    "agency": "USFWS",
+    "habitat": "Spring-fed wetlands, wet meadows, bogs, and seepage wetlands",
+    "source": "USFWS ECOSphere species record context",
+    "sourceUrl": "https://ecos.fws.gov/ecp/species/6962"
+  },
+  {
+    "id": "roseate-tern",
+    "commonName": "Roseate Tern",
+    "scientificName": "Sterna dougallii dougallii",
+    "status": "Endangered",
+    "taxon": "Bird",
+    "agency": "USFWS",
+    "habitat": "Coastal islands, beaches, and nearshore feeding areas",
+    "source": "USFWS ECOSphere species record context",
+    "sourceUrl": "https://ecos.fws.gov/ecp/species/2083"
+  },
+  {
+    "id": "loggerhead-sea-turtle",
+    "commonName": "Loggerhead Sea Turtle",
+    "scientificName": "Caretta caretta",
+    "status": "Threatened",
+    "taxon": "Reptile",
+    "agency": "Joint",
+    "habitat": "Atlantic coastal waters, nearshore marine areas, and nesting beaches",
+    "source": "NOAA Fisheries and USFWS joint ESA species context",
+    "sourceUrl": "https://www.fisheries.noaa.gov/species/loggerhead-turtle"
+  },
+  {
+    "id": "kemps-ridley-sea-turtle",
+    "commonName": "Kemp's Ridley Sea Turtle",
+    "scientificName": "Lepidochelys kempii",
+    "status": "Endangered",
+    "taxon": "Reptile",
+    "agency": "Joint",
+    "habitat": "Atlantic coastal waters, nearshore marine habitats, and migratory corridors",
+    "source": "NOAA Fisheries and USFWS joint ESA species context",
+    "sourceUrl": "https://www.fisheries.noaa.gov/species/kemps-ridley-turtle"
+  }
+]

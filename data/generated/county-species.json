@@ -1,0 +1,350 @@
+[
+  {
+    "countyId": "dorchester",
+    "speciesId": "atlantic-sturgeon",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "dorchester",
+    "speciesId": "shortnose-sturgeon",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "dorchester",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "dorchester",
+    "speciesId": "red-knot",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "worcester",
+    "speciesId": "piping-plover",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "worcester",
+    "speciesId": "red-knot",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "worcester",
+    "speciesId": "roseate-tern",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "worcester",
+    "speciesId": "loggerhead-sea-turtle",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "worcester",
+    "speciesId": "kemps-ridley-sea-turtle",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "worcester",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "somerset",
+    "speciesId": "atlantic-sturgeon",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "somerset",
+    "speciesId": "red-knot",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "somerset",
+    "speciesId": "loggerhead-sea-turtle",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "somerset",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "cecil",
+    "speciesId": "atlantic-sturgeon",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "cecil",
+    "speciesId": "shortnose-sturgeon",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "cecil",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "harford",
+    "speciesId": "atlantic-sturgeon",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "harford",
+    "speciesId": "shortnose-sturgeon",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "harford",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "kent",
+    "speciesId": "atlantic-sturgeon",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "kent",
+    "speciesId": "red-knot",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "kent",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "queen-annes",
+    "speciesId": "atlantic-sturgeon",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "queen-annes",
+    "speciesId": "red-knot",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "queen-annes",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "talbot",
+    "speciesId": "atlantic-sturgeon",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "talbot",
+    "speciesId": "red-knot",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "talbot",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "calvert",
+    "speciesId": "atlantic-sturgeon",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "calvert",
+    "speciesId": "red-knot",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "calvert",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "st-marys",
+    "speciesId": "atlantic-sturgeon",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "st-marys",
+    "speciesId": "red-knot",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "st-marys",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "anne-arundel",
+    "speciesId": "atlantic-sturgeon",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "anne-arundel",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "baltimore-city",
+    "speciesId": "atlantic-sturgeon",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "baltimore",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "baltimore",
+    "speciesId": "bog-turtle",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "carroll",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "carroll",
+    "speciesId": "bog-turtle",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "frederick",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "frederick",
+    "speciesId": "bog-turtle",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "garrett",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "garrett",
+    "speciesId": "bog-turtle",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "montgomery",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "montgomery",
+    "speciesId": "bog-turtle",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "prince-georges",
+    "speciesId": "shortnose-sturgeon",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "prince-georges",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "charles",
+    "speciesId": "shortnose-sturgeon",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "charles",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "allegany",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "caroline",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "howard",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "washington",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "wicomico",
+    "speciesId": "atlantic-sturgeon",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  },
+  {
+    "countyId": "wicomico",
+    "speciesId": "northern-long-eared-bat",
+    "basis": "manual-review",
+    "notes": "MVP county-species relationship requiring source-by-source review against ECOS/IPaC, NOAA range data, and spatial occurrence/range datasets before production use."
+  }
+]

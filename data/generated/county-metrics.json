@@ -1,0 +1,194 @@
+[
+  {
+    "countyId": "allegany",
+    "protectedHabitatPercent": 32,
+    "criticalHabitatPresent": false,
+    "fragmentationRisk": "Medium",
+    "conservationPriority": "Medium",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "anne-arundel",
+    "protectedHabitatPercent": 45,
+    "criticalHabitatPresent": true,
+    "fragmentationRisk": "High",
+    "conservationPriority": "High",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "baltimore",
+    "protectedHabitatPercent": 32,
+    "criticalHabitatPresent": false,
+    "fragmentationRisk": "High",
+    "conservationPriority": "Medium",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "calvert",
+    "protectedHabitatPercent": 45,
+    "criticalHabitatPresent": true,
+    "fragmentationRisk": "Medium",
+    "conservationPriority": "High",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "caroline",
+    "protectedHabitatPercent": 32,
+    "criticalHabitatPresent": false,
+    "fragmentationRisk": "Medium",
+    "conservationPriority": "Medium",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "carroll",
+    "protectedHabitatPercent": 32,
+    "criticalHabitatPresent": false,
+    "fragmentationRisk": "Medium",
+    "conservationPriority": "Medium",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "cecil",
+    "protectedHabitatPercent": 45,
+    "criticalHabitatPresent": true,
+    "fragmentationRisk": "Medium",
+    "conservationPriority": "High",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "charles",
+    "protectedHabitatPercent": 45,
+    "criticalHabitatPresent": true,
+    "fragmentationRisk": "Medium",
+    "conservationPriority": "High",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "dorchester",
+    "protectedHabitatPercent": 68,
+    "criticalHabitatPresent": true,
+    "fragmentationRisk": "Medium",
+    "conservationPriority": "Very High",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "frederick",
+    "protectedHabitatPercent": 32,
+    "criticalHabitatPresent": false,
+    "fragmentationRisk": "Medium",
+    "conservationPriority": "Medium",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "garrett",
+    "protectedHabitatPercent": 45,
+    "criticalHabitatPresent": true,
+    "fragmentationRisk": "Medium",
+    "conservationPriority": "High",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "harford",
+    "protectedHabitatPercent": 45,
+    "criticalHabitatPresent": true,
+    "fragmentationRisk": "Medium",
+    "conservationPriority": "High",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "howard",
+    "protectedHabitatPercent": 32,
+    "criticalHabitatPresent": false,
+    "fragmentationRisk": "High",
+    "conservationPriority": "Medium",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "kent",
+    "protectedHabitatPercent": 45,
+    "criticalHabitatPresent": true,
+    "fragmentationRisk": "Medium",
+    "conservationPriority": "High",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "montgomery",
+    "protectedHabitatPercent": 32,
+    "criticalHabitatPresent": false,
+    "fragmentationRisk": "High",
+    "conservationPriority": "Medium",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "prince-georges",
+    "protectedHabitatPercent": 32,
+    "criticalHabitatPresent": false,
+    "fragmentationRisk": "High",
+    "conservationPriority": "Medium",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "queen-annes",
+    "protectedHabitatPercent": 45,
+    "criticalHabitatPresent": true,
+    "fragmentationRisk": "Medium",
+    "conservationPriority": "High",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "st-marys",
+    "protectedHabitatPercent": 45,
+    "criticalHabitatPresent": true,
+    "fragmentationRisk": "Medium",
+    "conservationPriority": "High",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "somerset",
+    "protectedHabitatPercent": 68,
+    "criticalHabitatPresent": true,
+    "fragmentationRisk": "Medium",
+    "conservationPriority": "Very High",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "talbot",
+    "protectedHabitatPercent": 45,
+    "criticalHabitatPresent": true,
+    "fragmentationRisk": "Medium",
+    "conservationPriority": "High",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "washington",
+    "protectedHabitatPercent": 32,
+    "criticalHabitatPresent": false,
+    "fragmentationRisk": "Medium",
+    "conservationPriority": "Medium",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "wicomico",
+    "protectedHabitatPercent": 32,
+    "criticalHabitatPresent": false,
+    "fragmentationRisk": "Medium",
+    "conservationPriority": "Medium",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "worcester",
+    "protectedHabitatPercent": 68,
+    "criticalHabitatPresent": true,
+    "fragmentationRisk": "Medium",
+    "conservationPriority": "Very High",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  },
+  {
+    "countyId": "baltimore-city",
+    "protectedHabitatPercent": 32,
+    "criticalHabitatPresent": false,
+    "fragmentationRisk": "High",
+    "conservationPriority": "Medium",
+    "notes": "Generated MVP metric. Replace with PAD-US protected-area overlap, official critical-habitat polygons, and fragmentation analysis in the PostGIS phase."
+  }
+]

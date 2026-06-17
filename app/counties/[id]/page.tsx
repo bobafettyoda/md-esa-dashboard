@@ -52,11 +52,11 @@ export default async function CountyProfile({
         </div>
         <div className="metric">
           <span>Protected Habitat</span>
-          <strong>{county.protectedHabitatPercent}%</strong>
+          <strong>{county.protectedHabitatPercent ?? "Review"}{county.protectedHabitatPercent === null ? "" : "%"}</strong>
         </div>
         <div className="metric">
           <span>Critical Habitat</span>
-          <strong>{county.criticalHabitatPresent ? "Yes" : "No"}</strong>
+          <strong>{county.criticalHabitatPresent === null ? "Review" : county.criticalHabitatPresent ? "Yes" : "No"}</strong>
         </div>
         <div className="metric">
           <span>Fragmentation</span>

@@ -39,7 +39,7 @@ export default function CountiesPage() {
               <div className="directoryStats">
                 <span>Score <strong>{county.score}</strong></span>
                 <span>Species <strong>{county.speciesCount}</strong></span>
-                <span>Protected <strong>{county.protectedHabitatPercent}%</strong></span>
+                <span>Protected <strong>{county.protectedHabitatPercent ?? "Review"}{county.protectedHabitatPercent === null ? "" : "%"}</strong></span>
               </div>
             </Link>
           ))}

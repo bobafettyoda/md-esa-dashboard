@@ -72,6 +72,10 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="panel dataBanner">
+        <strong>Data status:</strong> Source-backed generated dataset. Species records reference USFWS/NOAA sources; county-species links and habitat metrics are marked for review until spatial validation is added.
+      </section>
+
       <section className="layout">
         <aside className="sidebar">
           <label htmlFor="county-search">Search counties</label>
@@ -111,8 +115,8 @@ export default function Home() {
 
           <div className="metrics metricsFive">
             <div className="metric"><span>ESA Species</span><strong>{selectedSpecies.length}</strong></div>
-            <div className="metric"><span>Protected Habitat</span><strong>{selectedCounty.protectedHabitatPercent}%</strong></div>
-            <div className="metric"><span>Critical Habitat</span><strong>{selectedCounty.criticalHabitatPresent ? "Yes" : "No"}</strong></div>
+            <div className="metric"><span>Protected Habitat</span><strong>{selectedCounty.protectedHabitatPercent ?? "Review"}{selectedCounty.protectedHabitatPercent === null ? "" : "%"}</strong></div>
+            <div className="metric"><span>Critical Habitat</span><strong>{selectedCounty.criticalHabitatPresent === null ? "Review" : selectedCounty.criticalHabitatPresent ? "Yes" : "No"}</strong></div>
             <div className="metric"><span>Fragmentation</span><strong>{selectedCounty.fragmentationRisk}</strong></div>
             <div className="metric"><span>Conservation Score</span><strong>{conservationScore}</strong></div>
           </div>
@@ -202,7 +206,7 @@ export default function Home() {
 
             <div className="panel">
               <h3>Habitat Gap Snapshot</h3>
-              <p>Estimated unprotected habitat: <strong>{100 - selectedCounty.protectedHabitatPercent}%</strong></p>
+              <p>Estimated unprotected habitat: <strong>{selectedCounty.protectedHabitatPercent === null ? "Review needed" : `${100 - selectedCounty.protectedHabitatPercent}%`}</strong></p>
               <p>Priority signal: <strong>{selectedCounty.conservationPriority}</strong></p>
             </div>
           </div>

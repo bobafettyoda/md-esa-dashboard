@@ -1,0 +1,170 @@
+[
+  {
+    "id": "allegany",
+    "name": "Allegany County",
+    "fips": "24001",
+    "region": "Western Maryland",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "anne-arundel",
+    "name": "Anne Arundel County",
+    "fips": "24003",
+    "region": "Central Maryland",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "baltimore",
+    "name": "Baltimore County",
+    "fips": "24005",
+    "region": "Central Maryland",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "calvert",
+    "name": "Calvert County",
+    "fips": "24009",
+    "region": "Southern Maryland",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "caroline",
+    "name": "Caroline County",
+    "fips": "24011",
+    "region": "Eastern Shore",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "carroll",
+    "name": "Carroll County",
+    "fips": "24013",
+    "region": "Central Maryland",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "cecil",
+    "name": "Cecil County",
+    "fips": "24015",
+    "region": "Upper Eastern Shore",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "charles",
+    "name": "Charles County",
+    "fips": "24017",
+    "region": "Southern Maryland",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "dorchester",
+    "name": "Dorchester County",
+    "fips": "24019",
+    "region": "Eastern Shore",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "frederick",
+    "name": "Frederick County",
+    "fips": "24021",
+    "region": "Western/Central Maryland",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "garrett",
+    "name": "Garrett County",
+    "fips": "24023",
+    "region": "Western Maryland",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "harford",
+    "name": "Harford County",
+    "fips": "24025",
+    "region": "Upper Chesapeake",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "howard",
+    "name": "Howard County",
+    "fips": "24027",
+    "region": "Central Maryland",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "kent",
+    "name": "Kent County",
+    "fips": "24029",
+    "region": "Upper Eastern Shore",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "montgomery",
+    "name": "Montgomery County",
+    "fips": "24031",
+    "region": "Capital Region",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "prince-georges",
+    "name": "Prince George's County",
+    "fips": "24033",
+    "region": "Capital Region",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "queen-annes",
+    "name": "Queen Anne's County",
+    "fips": "24035",
+    "region": "Eastern Shore",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "st-marys",
+    "name": "St. Mary's County",
+    "fips": "24037",
+    "region": "Southern Maryland",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "somerset",
+    "name": "Somerset County",
+    "fips": "24039",
+    "region": "Lower Eastern Shore",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "talbot",
+    "name": "Talbot County",
+    "fips": "24041",
+    "region": "Eastern Shore",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "washington",
+    "name": "Washington County",
+    "fips": "24043",
+    "region": "Western Maryland",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "wicomico",
+    "name": "Wicomico County",
+    "fips": "24045",
+    "region": "Lower Eastern Shore",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "worcester",
+    "name": "Worcester County",
+    "fips": "24047",
+    "region": "Lower Eastern Shore",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  },
+  {
+    "id": "baltimore-city",
+    "name": "Baltimore City",
+    "fips": "24510",
+    "region": "Central Maryland",
+    "source": "U.S. Census county FIPS / cartographic boundary reference"
+  }
+]
