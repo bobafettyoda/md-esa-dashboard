@@ -504,3 +504,11 @@ dd {
   stroke: white;
   stroke-width: 1.7;
 }
+
+.realMap {
+  min-height: 520px;
+}
+
+.realMap svg {
+  min-height: 520px;
+}

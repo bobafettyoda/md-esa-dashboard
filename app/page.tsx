@@ -115,8 +115,8 @@ export default function Home() {
               <ComposableMap
                 projection="geoMercator"
                 projectionConfig={{
-                  center: [-76.7, 38.9],
-                  scale: 9000,
+                  center: [-76.8, 39.0],
+                  scale: 8500,
                 }}
                 width={800}
                 height={430}
