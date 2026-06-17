@@ -59,6 +59,7 @@ export default function Home() {
             fragmentation risk, and conservation priorities by Maryland county.
           </p>
           <div className="heroLinks">
+            <Link href="/counties">Browse counties</Link>
             <Link href="/sources">View data source registry</Link>
           </div>
         </div>
@@ -180,7 +181,9 @@ export default function Home() {
                   <span className="rankNumber">#{index + 1}</span>
                   <span>
                     <strong>{county.name}</strong>
-                    <small>{county.conservationPriority} priority</small>
+                    <small>
+                      {county.conservationPriority} priority · <Link href={`/counties/${county.id}`}>View profile</Link>
+                    </small>
                   </span>
                   <b>{county.score}</b>
                 </button>
