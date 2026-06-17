@@ -60,6 +60,7 @@ export default function Home() {
           </p>
           <div className="heroLinks">
             <Link href="/counties">Browse counties</Link>
+            <Link href="/gis">View GIS engine</Link>
             <Link href="/sources">View data source registry</Link>
           </div>
         </div>

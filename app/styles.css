@@ -767,3 +767,40 @@ dd {
 .dataBanner strong {
   color: #74d7a7;
 }
+
+.gisGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.gisGrid div {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(159, 189, 219, 0.14);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.gisGrid span {
+  display: block;
+  color: #91a4ba;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.gisGrid strong {
+  font-size: 18px;
+}
+
+.dataFootnote {
+  color: #b9c8d9;
+  line-height: 1.6;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .gisGrid {
+    grid-template-columns: 1fr;
+  }
+}

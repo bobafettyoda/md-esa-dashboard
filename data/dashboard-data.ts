@@ -2,6 +2,7 @@ import rawCounties from "./generated/counties.json";
 import rawSpecies from "./generated/species.json";
 import rawCountySpecies from "./generated/county-species.json";
 import rawCountyMetrics from "./generated/county-metrics.json";
+import rawGisMetrics from "./generated/county-gis-metrics.json";
 
 export type Species = {
   id: string;
@@ -26,6 +27,11 @@ export type County = {
   criticalHabitatPresent: boolean | null;
   fragmentationRisk: "Low" | "Medium" | "High" | "Unknown";
   notes: string;
+  areaAcres?: number | null;
+  protectedAreaAcres?: number | null;
+  criticalHabitatAcres?: number | null;
+  unprotectedCriticalHabitatAcres?: number | null;
+  gisStatus?: string;
   speciesIds: string[];
 };
 
@@ -49,6 +55,16 @@ export const species = rawSpecies as Species[];
 
 const countySpecies = rawCountySpecies as CountySpecies[];
 const countyMetrics = rawCountyMetrics as CountyMetric[];
+const countyGisMetrics = rawGisMetrics as Array<{
+  countyId: string;
+  areaAcres: number;
+  protectedAreaAcres: number | null;
+  protectedAreaPercent: number | null;
+  criticalHabitatAcres: number | null;
+  criticalHabitatPercent: number | null;
+  unprotectedCriticalHabitatAcres: number | null;
+  gisStatus: string;
+}>;
 
 export const counties = (rawCounties as Array<{
   id: string;
@@ -58,15 +74,23 @@ export const counties = (rawCounties as Array<{
   source: string;
 }>).map((county) => {
   const metric = countyMetrics.find((item) => item.countyId === county.id);
+  const gisMetric = countyGisMetrics.find((item) => item.countyId === county.id);
+
   return {
     ...county,
     conservationPriority: metric?.conservationPriority || "Unknown",
-    protectedHabitatPercent: metric?.protectedHabitatPercent ?? null,
+    protectedHabitatPercent:
+      gisMetric?.protectedAreaPercent ?? metric?.protectedHabitatPercent ?? null,
     criticalHabitatPresent: metric?.criticalHabitatPresent ?? null,
     fragmentationRisk: metric?.fragmentationRisk || "Unknown",
     notes:
       metric?.notes ||
       "Generated county record. Detailed habitat metrics require GIS overlap analysis.",
+    areaAcres: gisMetric?.areaAcres ?? null,
+    protectedAreaAcres: gisMetric?.protectedAreaAcres ?? null,
+    criticalHabitatAcres: gisMetric?.criticalHabitatAcres ?? null,
+    unprotectedCriticalHabitatAcres: gisMetric?.unprotectedCriticalHabitatAcres ?? null,
+    gisStatus: gisMetric?.gisStatus,
     speciesIds: countySpecies
       .filter((item) => item.countyId === county.id)
       .map((item) => item.speciesId),

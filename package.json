@@ -6,6 +6,7 @@
     "generate:data": "node scripts/generate-real-data.mjs"
   },
   "dependencies": {
+    "@turf/turf": "^7.3.5",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
@@ -19,5 +20,8 @@
   },
   "devDependencies": {
     "@types/topojson-client": "^3.1.5"
-  }
+  },
+  "gis:counties": "node scripts/build-maryland-counties.mjs",
+  "gis:metrics": "node scripts/build-gis-metrics.mjs",
+  "gis:build": "npm run gis:counties && npm run gis:metrics"
 }

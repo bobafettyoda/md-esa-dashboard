@@ -69,6 +69,32 @@ export default async function CountyProfile({
       </section>
 
       <section className="panel">
+        <h2>GIS Analysis</h2>
+        <div className="gisGrid">
+          <div>
+            <span>County Area</span>
+            <strong>{county.areaAcres ? county.areaAcres.toLocaleString() + " acres" : "Pending"}</strong>
+          </div>
+          <div>
+            <span>Protected Area</span>
+            <strong>{county.protectedAreaAcres ? county.protectedAreaAcres.toLocaleString() + " acres" : "Pending PAD-US"}</strong>
+          </div>
+          <div>
+            <span>Critical Habitat</span>
+            <strong>{county.criticalHabitatAcres ? county.criticalHabitatAcres.toLocaleString() + " acres" : "Pending USFWS/NOAA"}</strong>
+          </div>
+          <div>
+            <span>Unprotected Critical Habitat</span>
+            <strong>{county.unprotectedCriticalHabitatAcres ? county.unprotectedCriticalHabitatAcres.toLocaleString() + " acres" : "Pending overlay"}</strong>
+          </div>
+        </div>
+        <p className="dataFootnote">
+          GIS status: {county.gisStatus || "pending"}. County area is already calculated from real geometry.
+          Protected lands and critical habitat require the next spatial overlay imports.
+        </p>
+      </section>
+
+      <section className="panel">
         <h2>Species Present</h2>
         <div className="speciesGrid">
           {countySpecies.map((item) => (
