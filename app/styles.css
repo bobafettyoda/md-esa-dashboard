@@ -365,3 +365,102 @@ dd {
     position: static;
   }
 }
+
+.marylandMap {
+  min-height: 280px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 70% 45%, rgba(96, 165, 250, 0.25), transparent 28%),
+    linear-gradient(135deg, #0a1f35, #0e2b45);
+  border: 1px solid rgba(159, 189, 219, 0.22);
+}
+
+.mdShape {
+  position: absolute;
+  background: rgba(116, 215, 167, 0.22);
+  border: 1px solid rgba(116, 215, 167, 0.35);
+  filter: drop-shadow(0 12px 22px rgba(0, 0, 0, 0.25));
+}
+
+.shapeWest {
+  width: 38%;
+  height: 26%;
+  left: 4%;
+  top: 39%;
+  border-radius: 60% 30% 45% 35%;
+  transform: rotate(-8deg);
+}
+
+.shapeCentral {
+  width: 36%;
+  height: 24%;
+  left: 34%;
+  top: 43%;
+  border-radius: 45% 50% 35% 55%;
+  transform: rotate(5deg);
+}
+
+.shapeBay {
+  width: 10%;
+  height: 58%;
+  left: 60%;
+  top: 22%;
+  background: rgba(96, 165, 250, 0.32);
+  border-color: rgba(96, 165, 250, 0.45);
+  border-radius: 999px;
+  transform: rotate(-8deg);
+}
+
+.shapeEastern {
+  width: 28%;
+  height: 46%;
+  left: 68%;
+  top: 42%;
+  border-radius: 45% 65% 42% 58%;
+  transform: rotate(9deg);
+}
+
+.mapPoint {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  transform: translate(-50%, -50%);
+  border-radius: 999px;
+  border: 2px solid white;
+  background: #fbbf24;
+  cursor: pointer;
+  z-index: 5;
+  box-shadow: 0 0 0 6px rgba(251, 191, 36, 0.18);
+}
+
+.mapPoint.active {
+  background: #f87171;
+  box-shadow: 0 0 0 9px rgba(248, 113, 113, 0.24);
+}
+
+.mapPoint span {
+  position: absolute;
+  left: 22px;
+  top: -6px;
+  white-space: nowrap;
+  background: rgba(8, 17, 31, 0.88);
+  border: 1px solid rgba(159, 189, 219, 0.2);
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+  border-radius: 999px;
+  padding: 5px 8px;
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .marylandMap {
+    min-height: 240px;
+  }
+
+  .mapPoint span {
+    display: none;
+  }
+}

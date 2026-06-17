@@ -4,19 +4,25 @@ import { useMemo, useState } from "react";
 import { counties, getSpeciesForCounty } from "../data/dashboard-data";
 import "./styles.css";
 
+const mapPoints: Record<string, { x: number; y: number }> = {
+  garrett: { x: 8, y: 46 },
+  montgomery: { x: 36, y: 56 },
+  "anne-arundel": { x: 55, y: 54 },
+  dorchester: { x: 73, y: 63 },
+  somerset: { x: 77, y: 82 },
+  worcester: { x: 88, y: 79 },
+};
+
 export default function Home() {
   const [selectedCountyId, setSelectedCountyId] = useState(counties[0].id);
   const [query, setQuery] = useState("");
 
-  const filteredCounties = useMemo(() => {
-    return counties.filter((county) =>
-      county.name.toLowerCase().includes(query.toLowerCase())
-    );
-  }, [query]);
+  const filteredCounties = useMemo(
+    () => counties.filter((c) => c.name.toLowerCase().includes(query.toLowerCase())),
+    [query]
+  );
 
-  const selectedCounty =
-    counties.find((county) => county.id === selectedCountyId) || counties[0];
-
+  const selectedCounty = counties.find((c) => c.id === selectedCountyId) || counties[0];
   const selectedSpecies = getSpeciesForCounty(selectedCounty);
 
   const usfwsCount = selectedSpecies.filter((s) => s.agency === "USFWS").length;
@@ -29,8 +35,8 @@ export default function Home() {
           <p className="eyebrow">Open-source conservation intelligence</p>
           <h1>Maryland ESA Habitat Dashboard</h1>
           <p className="lede">
-            Explore ESA-listed species, agency jurisdiction, critical habitat presence,
-            protected habitat estimates, and conservation priorities by Maryland county.
+            Explore ESA-listed species, agency jurisdiction, habitat protection,
+            fragmentation risk, and conservation priorities by Maryland county.
           </p>
         </div>
 
@@ -80,37 +86,43 @@ export default function Home() {
           </div>
 
           <div className="metrics">
-            <div className="metric">
-              <span>ESA Species</span>
-              <strong>{selectedSpecies.length}</strong>
-            </div>
-            <div className="metric">
-              <span>Protected Habitat</span>
-              <strong>{selectedCounty.protectedHabitatPercent}%</strong>
-            </div>
-            <div className="metric">
-              <span>Critical Habitat</span>
-              <strong>{selectedCounty.criticalHabitatPresent ? "Yes" : "No"}</strong>
-            </div>
-            <div className="metric">
-              <span>Fragmentation</span>
-              <strong>{selectedCounty.fragmentationRisk}</strong>
-            </div>
+            <div className="metric"><span>ESA Species</span><strong>{selectedSpecies.length}</strong></div>
+            <div className="metric"><span>Protected Habitat</span><strong>{selectedCounty.protectedHabitatPercent}%</strong></div>
+            <div className="metric"><span>Critical Habitat</span><strong>{selectedCounty.criticalHabitatPresent ? "Yes" : "No"}</strong></div>
+            <div className="metric"><span>Fragmentation</span><strong>{selectedCounty.fragmentationRisk}</strong></div>
           </div>
 
           <div className="panel mapPanel">
             <div>
-              <h3>Maryland Map Placeholder</h3>
+              <h3>Maryland Conservation Map</h3>
               <p>
-                This panel is ready for MapLibre. The next version can show county
-                boundaries, critical habitat polygons, protected areas, and unprotected gaps.
+                Click a county marker to update the dashboard. This is a lightweight
+                map prototype; the next version can use real GeoJSON boundaries.
               </p>
             </div>
-            <div className="fakeMap">
-              <div className="mapBlob blob1"></div>
-              <div className="mapBlob blob2"></div>
-              <div className="mapBlob blob3"></div>
-              <span>{selectedCounty.name}</span>
+
+            <div className="marylandMap" aria-label="Maryland county selector map">
+              <div className="mdShape shapeWest" />
+              <div className="mdShape shapeCentral" />
+              <div className="mdShape shapeBay" />
+              <div className="mdShape shapeEastern" />
+
+              {counties.map((county) => {
+                const point = mapPoints[county.id];
+                if (!point) return null;
+
+                return (
+                  <button
+                    key={county.id}
+                    className={county.id === selectedCounty.id ? "mapPoint active" : "mapPoint"}
+                    style={{ left: `${point.x}%`, top: `${point.y}%` }}
+                    onClick={() => setSelectedCountyId(county.id)}
+                    title={county.name}
+                  >
+                    <span>{county.name}</span>
+                  </button>
+                );
+              })}
             </div>
           </div>
 
@@ -118,27 +130,15 @@ export default function Home() {
             <div className="panel">
               <h3>Agency Jurisdiction</h3>
               <div className="agencyRows">
-                <div>
-                  <span>USFWS species</span>
-                  <strong>{usfwsCount}</strong>
-                </div>
-                <div>
-                  <span>NOAA Fisheries species</span>
-                  <strong>{noaaCount}</strong>
-                </div>
+                <div><span>USFWS species</span><strong>{usfwsCount}</strong></div>
+                <div><span>NOAA Fisheries species</span><strong>{noaaCount}</strong></div>
               </div>
             </div>
 
             <div className="panel">
               <h3>Habitat Gap Snapshot</h3>
-              <p>
-                Estimated unprotected habitat:{" "}
-                <strong>{100 - selectedCounty.protectedHabitatPercent}%</strong>
-              </p>
-              <p>
-                Priority signal:{" "}
-                <strong>{selectedCounty.conservationPriority}</strong>
-              </p>
+              <p>Estimated unprotected habitat: <strong>{100 - selectedCounty.protectedHabitatPercent}%</strong></p>
+              <p>Priority signal: <strong>{selectedCounty.conservationPriority}</strong></p>
             </div>
           </div>
 
@@ -153,18 +153,9 @@ export default function Home() {
                   </div>
                   <p className="scientific">{item.scientificName}</p>
                   <dl>
-                    <div>
-                      <dt>Taxon</dt>
-                      <dd>{item.taxon}</dd>
-                    </div>
-                    <div>
-                      <dt>Agency</dt>
-                      <dd>{item.agency}</dd>
-                    </div>
-                    <div>
-                      <dt>Habitat</dt>
-                      <dd>{item.habitat}</dd>
-                    </div>
+                    <div><dt>Taxon</dt><dd>{item.taxon}</dd></div>
+                    <div><dt>Agency</dt><dd>{item.agency}</dd></div>
+                    <div><dt>Habitat</dt><dd>{item.habitat}</dd></div>
                   </dl>
                 </article>
               ))}
